@@ -25,19 +25,20 @@ public class Ejercicio10 {
         euros = eurosIn.nextInt();
         
         do{
-            if((euros/100-1) >= 0){
+            while((euros/100-1) >= 0){
                 b100++;
                 euros=euros-100;
             }
-            if((euros/20) >= 0){
+            while((euros/20-1) >= 0){
                 b20++;
                 euros=euros-20;
             }
-            if((euros/5) >= 0){
+            while((euros/5-1) >= 0){
                 b5++;
                 euros=euros-5;
             }
         }while(euros >= 5);
+        
         
         System.out.println("Billetes de 100: "+ b100);
         System.out.println("Billetes de 20: "+ b20);
